@@ -161,6 +161,8 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
+    margin-right: 16px !important;
+    margin-top: 4px !important;
 }
 .main-nav nav .navbar-nav .nav-item {
     position: relative;
