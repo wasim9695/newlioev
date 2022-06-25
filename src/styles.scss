@@ -1765,7 +1765,7 @@ Footer Area CSS
     font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 36px;
     display: flex;
     align-items: center;
@@ -5086,6 +5086,27 @@ ul.social-bottoms li {
     top: 0;
 }
 
+.about-service-text.lioAppsBlocksright {
+    margin-top: -40px;
+}
+.lioNiEv{
+    padding-bottom: 110px;
+}
+.whatsappApps {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    background: #70cf36;
+    z-index: 9500;
+    /* transform: rotate(-90deg); */
+}
+
+.bottom-text .social-bottom .bx{
+    background: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
 // end 
 
 .choose-card.bookScooter{
