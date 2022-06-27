@@ -17,6 +17,17 @@ body {
     font-family: $body-font;
     color: $paragraph-color;
 }
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('./assets/fonts/digital-7-italic.ttf');
+   }
+
+   @font-face{
+    font-family:'Rowdies';
+    src: url('./assets/fonts/Rowdies-Bold-700.ttf');
+   }
+
 p {
     color: $paragraph-color; 
 }
@@ -935,7 +946,7 @@ About Area Style
                 left: 0%;
                 width: 50%;
                 height: 50%;
-                background-color: $title-color;
+               // background-color: $title-color;
                 z-index: -1;
                 -webkit-transition: all 0.5s;
                 transition: all 0.5s;
@@ -947,7 +958,7 @@ About Area Style
                 right: 0%;
                 width: 50%;
                 height: 50%;
-                background-color: $title-color;
+                //background-color: $title-color;
                 z-index: -1;
                 -webkit-transition: all 0.5s;
                 transition: all 0.5s;
@@ -1667,6 +1678,9 @@ Footer Area CSS
         color: $color-white;
         position: relative;
         margin-bottom: 20px;
+        font-family: 'Arial Black';
+font-style: normal;
+font-weight: 900;
     }
     ul {
         list-style: none;
@@ -1686,6 +1700,9 @@ Footer Area CSS
                 color: $color-white;
                 position: relative;
                 transition: 0.7s;
+                font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
 
                 &::before {
                     content: '';
@@ -1718,6 +1735,9 @@ Footer Area CSS
         color: $color-white;
         position: relative;
         margin-bottom: 20px;
+        font-family: 'Arial Black';
+font-style: normal;
+font-weight: 900;
     }
     ul {
         list-style: none;
@@ -1729,6 +1749,9 @@ Footer Area CSS
             display: block;
             font-size: 17px;
             color: $color-white;
+            font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
 
             &:hover i {
                 border-radius: 50px;
@@ -4917,6 +4940,9 @@ margin-bottom: 0px;
         font-size: 18px;
         color: #555;
         padding-bottom: 15px;
+        font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
       }
     }
   
@@ -5107,13 +5133,220 @@ ul.social-bottoms li {
     color: #000000;
     border-radius: 5px;
 }
+
+.productMain{
+    padding-top: 140px;
+}
+
+.productMain .container{
+    background: #FFFFFF;
+box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+.productMain .abouServicesLeft {
+    margin-bottom: 30px;
+}
+.secontSection{
+    padding-top: 40px;
+}
+.thirdSection{
+    padding-top: 40px;
+}
+.thirdSection .container{
+    background: linear-gradient(270deg, #36C6CF 18.76%, #4D98C4 62.79%, #3F87F5 102.92%);
+box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding-bottom: 25px;
+}
+
+.fourthSection{
+    padding-top: 40px;
+}
+.fourthSection .container{
+    background: linear-gradient(270deg, #F1DB8B 18.76%, #DBFF00 102.92%);
+    box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+padding-bottom: 25px;
+}
+
+.secontSection .container{
+    background: #FFFFFF;
+box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+padding-bottom: 8px;
+}
+
+.secontSection .about-service-img .about-man-bg{
+    top: -10px;
+}
+
+.secontSection img{
+   width: 65%;
+}
+
+.thirdSection .abouServicesLeft {
+    padding-top: 20px;
+}
+
+.thirdSection .abouServicesLeft .about-content p{
+    line-height: 29px;
+}
+
+.thirdSection .abouServicesLeft .about-content h2{
+    line-height: 29px;
+}
+
+.thirdSection .abouServicesLeft .about-content {
+  margin-left: 20px;
+}
+
+.thirdSection .aboutScootysHome{
+text-align: center;
+}
+
+.thirdSection .about-service-img .about-man-bg{
+    padding-top: 8px;
+}
+
+.thirdSection .about-man-bg p{
+    font-family: 'Digital Numbers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: justify;
+    color: #000000;
+    position: absolute;
+    /* width: 180px; */
+    /* height: 58px; */
+    left: 210px;
+    top: 55px;
+}
+
+
+
+.fourthSection .abouServicesLeft {
+    padding-top: 20px;
+}
+
+.fourthSection .abouServicesLeft .about-content p{
+    line-height: 29px;
+}
+
+.fourthSection .abouServicesLeft .about-content h2{
+    line-height: 29px;
+}
+
+.fourthSection .abouServicesLeft .about-content {
+  margin-left: 20px;
+}
+
+.fourthSection .aboutScootysHome{
+text-align: center;
+}
+
+.fourthSection .about-service-img .about-man-bg{
+    padding-top: 8px;
+}
+
+.fourthSection .about-man-bg p{
+    font-family: 'Digital Numbers';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: justify;
+    color: #000000;
+    position: absolute;
+    /* width: 180px; */
+    /* height: 58px; */
+    left: 210px;
+    top: 55px;
+}
+
+.pdescription span{
+    font-family: 'Arial';
+font-style: normal;
+color: #000000;
+font-size: 16px;
+}
+.prdColor{
+    margin-top: 10px;
+}
+.colorCodes p{
+    font-size: 16px !important;
+}
+
+.clsRed{
+    color: red;
+    font-size: 20px;
+    /* padding-top: 4px; */
+    position: relative;
+    top: 3px;
+}
+.clsGreen{
+    color: green;
+    font-size: 20px;
+    /* padding-top: 4px; */
+    position: relative;
+    top: 3px;
+}
+.clsBlue{
+    color: blue;
+    font-size: 20px;
+    /* padding-top: 4px; */
+    position: relative;
+    top: 3px;
+}
+.clsBlack{
+    color: black;
+    font-size: 20px;
+    /* padding-top: 4px; */
+    position: relative;
+    top: 3px;
+    
+}
+.emiOptions{
+   
+padding-top: 40px;
+}
+.emiOptions .container{
+    background: #FFFFFF;
+    box-shadow: 7px -5px 4px rgba(0, 0, 0, 0.25), 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.emiOptions span{
+    color: #02374E;
+    background: unset;
+    -webkit-text-fill-color: unset;
+}
+
 // end 
 
-.choose-card.bookScooter{
-    background: #ffffff !important;
+.about-service-img.aboutScootysHome.sProducts{
     background: #FFFFFF;
-box-shadow: 5px -5px 4px rgba(0, 0, 0, 0.25), -5px 5px 4px rgba(0, 0, 0, 0.25);
-border-radius: 57px;
+    box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+padding: 10px;
+}
+.about-service-img.aboutScootysHome.sProducts .about-man-bgs{
+width: 60%;
+margin: 0 auto;
+}
+
+.sProducts h2, .sProducts .about-btn{
+    text-align: center;
+    font-size: 25px;
+}
+.sProducts .about-btn .default-btn {
+    padding: 6px 15px;
+}
+
+.paddintTop{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 form#contactForm {
@@ -5128,6 +5361,9 @@ form#contactForm .form-group > label{
     color: #000000;
     padding-bottom: 10px;
     padding-top: 10px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
 }
 .formBtn{
     width: 100%;
@@ -5138,6 +5374,9 @@ form#contactForm .form-group > label{
     background: #FFFFFF;
     border: 2px solid #000000;
     border-radius: 15px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
 }
 .nice-select{
     width: 100%;

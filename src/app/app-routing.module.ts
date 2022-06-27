@@ -5,7 +5,12 @@ const routes: Routes = [
     {
      path: '',
      loadChildren: () => import('./components/pages/home-page/home-page.module').then(m => m.HomePageModule),
-    },];
+    },
+    {
+        path: 'product-detail',
+        loadChildren: () => import('./components/pages/product-detail/product-detail.module').then(m => m.ProductDetailModule),
+       },
+];
 
 
 @NgModule({
