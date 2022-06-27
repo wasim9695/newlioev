@@ -1,5 +1,5 @@
 (function($) {
-    'use strict';
+    //'use strict';
     
     // Mean Menu JS
 	jQuery('.mean-menu').meanmenu({ 
@@ -251,7 +251,7 @@ var carousels = function () {
 })(jQuery);
 
 (function () {
-    "use strict";
+   // "use strict";
   
     var carousels = function () {
       $(".owl-carousel1").owlCarousel({
