@@ -9,7 +9,11 @@ const routes: Routes = [
     {
         path: 'product-detail',
         loadChildren: () => import('./components/pages/product-detail/product-detail.module').then(m => m.ProductDetailModule),
-       },
+    },
+    {
+        path: 'contact-us',
+        loadChildren: () => import('./components/pages/contact-us/contact-us.module').then(m => m.ContactUsModule),
+    },
 ];
 
 

@@ -9,6 +9,7 @@ import { NavbarStyleTwoComponent } from './components/common/navbar-style-two/na
 import { ErrorComponent } from './components/pages/error/error.component';
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.
     NavbarStyleTwoComponent,
     ErrorComponent,
     ComingSoonComponent
+
   ],
   imports: [
     BrowserModule,
