@@ -5463,7 +5463,156 @@ form#contactForm .form-group > label{
 }
 
 
+.checkoutMain{
+    padding-top: 140px;
+}
 
+.checkoutMain .about-service-img.aboutScootysHome.sProducts{
+    max-width: 100%;
+}
+
+.checkoutMain .input-group{
+    width: 33%;
+    background: #02374E !important;
+        padding: 4px;
+        border-radius: 10px;
+    }
+    
+    .checkoutMain .input-group .btn{
+    position: relative;
+        z-index: 2;
+        top: 2px;
+            min-width: 20px !important;
+        height: 20px;
+        border-top-right-radius: 4px !important; 
+        border-bottom-right-radius: 4px !important;
+        padding: 0px;
+        line-height: 12px;
+    }
+    
+    .checkoutMain .btn-outline-secondary{
+    color: #ffffff;
+        border-color: #ffffff;
+    }
+    .checkoutMain .form-control{
+    color: #ffffff;
+        background-color: #02374E;
+        border:0px;
+        padding: 0%;
+    }
+    .checkoutMain .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+        border-top-right-radius: 4px !important; 
+        border-bottom-right-radius: 4px !important;
+        border-radius: 4px;
+    }
+.checkoutMain .about-service-img.aboutScootysHome.sProducts .about-man-bgs {
+    width: 83%;
+}
+
+.checkoutMain .sProducts h2{
+    text-align: left;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.checkoutMain .sProducts p{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #000000;
+padding-left: 10px;
+line-height: 15px;
+}
+
+
+.checkoutMain .sProducts .about-btn .default-btn {
+    width: 80%;
+}
+.checkoutMain .about-btn {
+    margin-top: 20px;
+}
+
+.checkoutMain .container{
+    background: #FFFFFF;
+box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+
+.referFrnd .container{
+    background: #FFFFFF;
+box-shadow: 4px -4px 4px rgba(0, 0, 0, 0.25), -4px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+margin-top: 25px;
+}
+
+.referFrnd .about-content span{
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 75px;
+    background: linear-gradient(270deg, #36C6CF 13.02%, #70CF36 72.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.referFrnd .about-content p{
+    width: 300px;
+    text-align: center;
+}
+
+.referFrnd .about-service-img .about-man-bg{
+    position: relative;
+}
+.modal.show .modal-dialog {
+    transform: none;
+    background: #FFFFFF;
+    border-radius: 48px;
+    border: 0px;
+    max-width: 1200px;
+}
+
+.checkFomsModal{
+    box-shadow: none;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 46px;
+    color: #000000;
+    margin: 0 auto;
+}
+
+button.close{
+    background: none;
+    border: unset;
+}
+
+button.close span{
+    font-size:25px;
+}
+button.close span:hover{
+    color: red;
+}
+.modal-header{
+    border-bottom: 0px;
+}
+
+.checkFomsModal .contactSecondDiv{
+margin-top: 0px;
+}
+
+.checkFomsModal form#contactForm{
+    padding-top: 0px;
+}
 
 // end main css
 .phone-btn.bookNowAdd{

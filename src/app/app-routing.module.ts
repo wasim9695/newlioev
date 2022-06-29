@@ -14,6 +14,11 @@ const routes: Routes = [
         path: 'contact-us',
         loadChildren: () => import('./components/pages/contact-us/contact-us.module').then(m => m.ContactUsModule),
     },
+    {
+        path: 'checkout',
+        loadChildren: () => import('./components/pages/checkout/checkout-m.module').then(m => m.CheckoutMModule),
+    },
+    
 ];
 
 

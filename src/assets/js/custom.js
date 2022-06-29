@@ -247,6 +247,8 @@ var carousels = function () {
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
+
+    $("input[type='number']").inputSpinner();
     
 })(jQuery);
 
