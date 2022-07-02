@@ -4700,7 +4700,7 @@ color: #FFFFFF;
     display: flex;
     position: absolute;
     top: 122px;
-    right: 435px;
+   // right: 435px;
 }
 .bnRight{
     left: 165px;
@@ -5323,6 +5323,15 @@ padding-top: 40px;
     -webkit-text-fill-color: unset;
 }
 
+.addbnRights{
+    margin-left: 535px;
+}
+
+.main-nav nav .navbar-nav .nav-item a:hover, .main-nav nav .navbar-nav .nav-item a:focus, .main-nav nav .navbar-nav .nav-item a.active {
+    color: #70cf36;
+}
+
+
 // end 
 
 .about-service-img.aboutScootysHome.sProducts{
@@ -5682,3 +5691,4 @@ Animation CSS
         transform: scale(1);
     }
 }
+
