@@ -5623,6 +5623,46 @@ margin-top: 0px;
     padding-top: 0px;
 }
 
+.reviewsSection .container{
+box-shadow: none;
+}
+
+.reviewsSection .scetion-title.text-center span{
+    background: linear-gradient(270deg, #36C6CF 13.02%, #70CF36 72.4%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.reviewsSection .about-service-img.aboutScootysHome.sProducts{
+    border-radius: 43px;
+}
+
+.reviewsContent h3{
+    font-size: 20px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+}
+.reviewsContent p{
+    color: #000000;
+    line-height: 0px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Arial';
+}
+.reviewsContent p.mainContent{
+    color: #000000;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+.reviewsSection .scetion-title.text-center{
+    padding-bottom: 20px;
+}
 // end main css
 .phone-btn.bookNowAdd{
     background: #02374E;

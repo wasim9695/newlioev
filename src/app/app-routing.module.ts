@@ -18,6 +18,10 @@ const routes: Routes = [
         path: 'checkout',
         loadChildren: () => import('./components/pages/checkout/checkout-m.module').then(m => m.CheckoutMModule),
     },
+    {
+        path: 'reviews',
+        loadChildren: () => import('./components/pages/customer-reviews/customer-m.module').then(m => m.CustomerMModule),
+    },
     
 ];
 
