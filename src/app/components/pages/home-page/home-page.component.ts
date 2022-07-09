@@ -12,8 +12,15 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  detailPage(){
-    this.router.navigate(['/product-detail']);
+  detailPage(event){
+    var elements = document.querySelector(".owl-item.active.center img");
+    var dataAttribute = elements.getAttribute('data-id');
+    //console.log(dataAttribute);
+    var dataAttributename = elements.getAttribute('data-name');
+    //console.log(dataAttributename);
+    localStorage.setItem('Xid', dataAttribute);
+    localStorage.setItem('color',dataAttributename);
+   this.router.navigate(['/product-detail']);
     //product-detail
   }
 

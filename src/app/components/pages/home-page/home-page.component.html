@@ -281,10 +281,12 @@
         
         <div class="row pt-45">
             <div class="product-images ptb-20">
+                <form method="post">
                 <div class="container">
+                   
                     <div class="product-images-slider owl-carousel owl-theme">
                         <div class="product-images-item">
-                            <img src="assets/img/home3/scooty-1.png" alt="Images">
+                            <img data-id="1" data-name="red" src="assets/img/home3/scooty-1.png" alt="Images">
                             <!-- <div class="banner-btn btnCenter">
                                 <a routerLink="/" class="default-btn">Book Now</a>
                               
@@ -293,7 +295,7 @@
                         </div>
             
                         <div class="product-images-item">
-                            <img src="assets/img/home3/scooty-4.png" alt="Images">
+                            <img data-id="2" data-name="white" src="assets/img/home3/scooty-4.png" alt="Images">
                             <!-- <div class="banner-btn btnCenter">
                                 <a routerLink="/" class="default-btn">Book Now</a>
                               
@@ -301,24 +303,26 @@
                         </div>
             
                         <div class="product-images-item">
-                            <img src="assets/img/home3/scooty-2.png" alt="Images">
+                            <img data-id="3" data-name="grey" src="assets/img/home3/scooty-2.png" alt="Images">
                            <!-- <div class="banner-btn btnCenter">
                                 <a routerLink="/" class="default-btn">Book Now</a>
                               
                             </div> -->
                         </div>
                         <div class="product-images-item">
-                            <img src="assets/img/home3/scooty-4.png" alt="Images">
+                            <img data-id="2" data-name="white" src="assets/img/home3/scooty-4.png" alt="Images">
                          
                         </div>
                         
                     </div>
                     
                     <div class="banner-btn btnCenter">
-                        <a href="javascript:void()" (click)="detailPage()" class="default-btn">Book Now</a>
+                        <a href="javascript:void()" (click)="detailPage($event)" class="default-btn">Book Now</a>
                       
                     </div>
+            
                 </div>
+                </form>
             </div>
         </div>
     </div>

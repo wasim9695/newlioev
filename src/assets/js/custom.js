@@ -132,6 +132,7 @@ var carousels = function () {
         nav: true,
         dots: true,
         autoplay: true,
+        center: true,
         autoplayHoverPause: true,
         navText: [
           "<i class='bx bx-left-arrow-alt bxPrd'></i>",
