@@ -5663,6 +5663,95 @@ box-shadow: none;
 .reviewsSection .scetion-title.text-center{
     padding-bottom: 20px;
 }
+.circleImgages {
+    display: inline-block;
+    width: 90px;
+    margin-right: 10px;
+    /* margin: 0 auto; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    margin-left: 80px;
+}
+.circleImgages.thirdByke{
+margin-left: 25px;
+}
+
+.circleImgages.fourthByke{
+    width: 50px;
+}
+.circleImgages.fifthByke{
+	margin-left: 90px;
+    width: 50px;
+}
+.circleImgages.sixthByke{
+	width: 50px;
+}
+
+.customersMains .container{
+    box-shadow: none;
+}
+
+.customersMains{
+    padding-top: 100px;
+}
+
+.circleImgages.seven{
+    margin-right: -20px;
+margin-left: 20px;
+}
+
+.circleImgages.seven img{
+   margin-top: -10px;
+}
+.circleImgages.eight img{
+   margin-top: -10px;
+}
+
+.circleImgages.nine img{
+    padding-top: 20px;
+}
+
+.circleImgages.ten{
+    width: 50px;
+}
+.circleImgages.elevent{
+   margin-left: 25px;
+}
+
+.circleImgages.elevent img{
+position: relative;
+top: 50px;
+}
+
+.leftMargin .circleImgages{
+    margin-right: 25px;
+}
+
+.circleImgages.midContainer{
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.midTexts {
+    background: #F0F4F7;
+    border-radius: 23px;
+    margin-top: 80px;
+}
+
+.midTexts p{
+    padding-bottom: 5px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    color: #000000;
+    padding: -l;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+}
 // end main css
 .phone-btn.bookNowAdd{
     background: #02374E;
