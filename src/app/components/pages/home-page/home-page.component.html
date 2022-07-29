@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="banner-btn">
-                        <a routerLink="/" class="default-btn">Book Now</a>
+                        <a href="javascript:void()" (click)="singleClick()"  class="default-btn">Book Now</a>
                         <!-- <a routerLink="/product" class="default-btn active">Our Products</a> -->
                     </div>
                 </div>
@@ -131,7 +131,7 @@
 </section>  -->
 <div class="about-area-two pt-15 pb-15">
     <div class="container">
-        <div class="scetion-title text-center sectionFeature">
+        <div class="scetion-title text-center sectionFeature" id="ourFeature">
             <span>Features</span>
             <h2>We offer Best & Futuristic Features </h2>
         </div>
@@ -272,7 +272,7 @@
 </div>
 <hr class="hrtags">
 <section class="product-area bg-color-in pt-15 pb-10">
-    <div class="container">
+    <div class="container" id="ourProduct">
         <div class="scetion-title text-center">
             <span>Our Product</span>
             <h2>We offer multipal & Stylish colors</h2>

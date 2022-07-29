@@ -39,6 +39,7 @@
  *  with the following flag, it will bypass `zone.js` patch for IE/Edge
  *
  *  (window as any).__Zone_enable_cross_context_check = true;
+ *  (window as any).global.util = (window as any).global.util || require("util").util;
  *
  */
 

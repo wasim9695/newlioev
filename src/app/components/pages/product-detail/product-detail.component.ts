@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -9,16 +10,23 @@ export class ProductDetailComponent implements OnInit {
   colorid:any;
   color:string;
   dataValue:any;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.colorid = localStorage.getItem('Xid');
-    console.log(this.colorid);
+    //console.log(this.colorid);
     this.color = localStorage.getItem('color');
+    //console.log(this.color);
    // console.log(this.color);
     this.backdata();
     //console.log(this.dataValue);
     
+  }
+
+  bookPro(){
+    localStorage.setItem('Xid', this.colorid);
+    localStorage.setItem('color',this.color);
+   this.router.navigate(['/checkout']);
   }
 
   backdata(){
@@ -35,6 +43,16 @@ export class ProductDetailComponent implements OnInit {
       }else{
         
       }
+  }
+
+
+  sProduct(id: any,color: any){
+    console.log(id,color);
+    localStorage.setItem('Xid', id);
+    localStorage.setItem('color',color);
+   this.router.navigate(['/checkout']);
+    //product-detail
+
   }
   
 

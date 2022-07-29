@@ -22,8 +22,8 @@
 
             </p>
              <div class="about-btn">
-                       <a  routerlink="/" class="default-btn know-more-btn" 
-                        href="/">Book Now</a></div></div>
+                       <a (click)="bookPro()"  href="javascript:void(0);" class="default-btn know-more-btn" 
+                       >Book Now</a></div></div>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                     </div> -->
 
                     <div class="about-man-bg">
-                        <img src="{{dataValue}}" alt="About Shape">
+                        <img data-id="{{colorid}}" src="{{dataValue}}" alt="About Shape">
                     </div>
                 </div>
             </div>
@@ -446,10 +446,10 @@
                     </div> -->
 
                     <div class="about-man-bgs">
-                        <img src="assets/img/home3/scooty-5.png" alt="About Shape">
+                        <img data-id="1" data-color="red" src="assets/img/home3/scooty-5.png" alt="About Shape">
                     </div>
                     <h2>Neo</h2>
-                    <div class="about-btn"><a routerlink="/" href="/" class="default-btn know-more-btn">Book Now</a></div>
+                    <div (click)="sProduct('1', 'white')" class="about-btn"><a href="javascript:void(0)" class="default-btn know-more-btn">Book Now</a></div>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -459,10 +459,10 @@
                     </div> -->
 
                     <div class="about-man-bgs">
-                        <img src="assets/img/home3/scooty-5.png" alt="About Shape">
+                        <img data-id="2" data-color="white" src="assets/img/home3/scooty-4.png" alt="About Shape">
                     </div>
                     <h2>Neo</h2>
-                    <div class="about-btn"><a routerlink="/" href="/" class="default-btn know-more-btn">Book Now</a></div>
+                    <div (click)="sProduct('2', 'red')" class="about-btn"><a href="javascript:void(0)" class="default-btn know-more-btn">Book Now</a></div>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -472,10 +472,10 @@
                     </div> -->
 
                     <div class="about-man-bgs">
-                        <img src="assets/img/home3/scooty-5.png" alt="About Shape">
+                        <img data-id="3" data-color="grey" src="assets/img/home3/scooty-2.png" alt="About Shape">
                     </div>
                     <h2>Neo</h2>
-                    <div class="about-btn"><a routerlink="/product-detail"  class="default-btn know-more-btn">Book Now</a></div>
+                    <div (click)="sProduct('3', 'grey')" class="about-btn"><a href="javascript:void(0)"  class="default-btn know-more-btn">Book Now</a></div>
                 </div>
             </div>
         </div>

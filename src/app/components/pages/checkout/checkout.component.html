@@ -1,208 +1,285 @@
 <div class="about-area-two pt-15 pb-10 emiOptions checkoutMain">
-    <div class="container">
-       <div class="row pt-45 paddintTop">
-          <div class="col-lg-5">
-             <div class="about-service-img aboutScootysHome sProducts">
-                <!-- <div class="about-man-img">
-                   <img src="assets/img/home3/scooty-5.png" alt="About Images">
-                   </div> -->
-                <div class="about-man-bgs">
-                   <img src="assets/img/home3/scooty-5.png" alt="About Shape">
-                </div>
-                <div class="row">
-                   <div class="col-lg-3">
-                      <h2>Lio Lite</h2>
-                   </div>
-                   <div class="col-lg-8"> 
-                      <input type="number" value="50" min="0" max="100" step="1"/>
-                   </div>
-                </div>
-             </div>
-          </div>
-          <div class="col-lg-7">
-             <div class="about-service-img aboutScootysHome sProducts">
-                <div class="row">
-                   <div class="col-lg-6">
-                      <h2>Title</h2>
-                   </div>
-                   <div class="col-lg-6">
-                      <h2>Detail</h2>
-                   </div>
-                   <hr>
-                </div>
-                <div class="row">
-                   <div class="col-lg-6">
-                      <p>Title</p>
-                   </div>
-                   <div class="col-lg-6">
-                      <p>03</p>
-                   </div>
-                </div>
-                <div class="row">
-                   <div class="col-lg-6">
-                      <p>Title</p>
-                   </div>
-                   <div class="col-lg-6">
-                      <p>03</p>
-                   </div>
-                </div>
-                <div class="row">
-                   <div class="col-lg-6">
-                      <p>Title</p>
-                   </div>
-                   <div class="col-lg-6">
-                      <p>03</p>
-                   </div>
-                </div>
-                <div class="row">
-                   <div class="col-lg-6">
-                      <p>Title</p>
-                   </div>
-                   <div class="col-lg-6">
-                      <p>03</p>
-                   </div>
-                </div>
-                <hr>
-                <div class="row">
-                   <div class="col-lg-6">
-                      <p> Total Payble Amount</p>
-                   </div>
-                   <div class="col-lg-6">
-                      <p>XYZ123</p>
-                   </div>
-                </div>
-                <div class="about-btn"><a (click)="open(mymodal)" href="javascript:void();" class="default-btn know-more-btn">Processed To Pay</a></div>
-                <!-- modal start -->
-                <ng-template #mymodal let-modal>
-                   <div class="modal-header">
-                      <h4 class="modal-title" id="modal-basic-title">Enter Credentials For Booking</h4>
-                      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                      <span aria-hidden="true">×</span>
-                      </button>
-                   </div>
-                   <div class="modal-body">
-                      <div class="about-area-two  pb-10 bookScooterAll mainFormCont checkFomsModal">
-                         <div class="container">
-                            <div class="row">
-                               <div class="col-lg-6">
-                                  <div class="about-service-text">
-                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-12">
-                                           <div class="choose-card contactSecondDiv">
-                                              <form id="contactForm">
-                                                 <div class="row">
-                                                    <div class="col-lg-12 col-sm-12">
-                                                       <div class="form-group">
-                                                          <label for="exampleInputEmail1">Name</label>
-                                                          <input type="text" name="name" id="name" class="form-control" required placeholder="Enter Your Name">
-                                                       </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-sm-12">
-                                                       <div class="form-group">
-                                                          <label for="exampleInputEmail1">Mobile Number</label>
-                                                          <input type="text" name="name" id="name" class="form-control" required placeholder="Enter Your Mobile Number">
-                                                       </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-sm-12">
-                                                       <div class="form-group">
-                                                          <label for="exampleInputEmail1">E-mail</label>
-                                                          <input type="email" name="name" id="name" class="form-control" required placeholder="Enter Your E-mail">
-                                                       </div>
-                                                    </div>
-                                                    
-                                                    <!-- <div class="col-lg-12 col-sm-12">
-                                                       <div class="form-group">
-                                                          <div class="about-btn"><a routerlink="/" href="/" class="default-btn know-more-btn formBtn">Send Massage</a></div>
-                                                       </div>
-                                                       </div> -->
-                                                 </div>
-                                              </form>
-                                           </div>
-                                        </div>
-                                     </div>
-                                  </div>
-                               </div>
-                               <div class="col-lg-6">
-                                  <div class="about-service-text">
-                                     <div class="row">
-                                        <div class="col-lg-12 col-sm-12">
-                                           <div class="choose-card contactSecondDiv">
-                                              <form id="contactForm">
-                                                 <div class="row">
-                                                    <div class="col-lg-12 col-sm-12">
-                                                        <div class="form-group">
-                                                           <label for="exampleInputEmail1">Address</label>
-                                                           <input type="textarea"  class="form-control" placeholder="Enter Your Address">
-                                                        </div>
-                                                     </div>
-                                                    <div class="col-lg-12 col-sm-12">
-                                                       <div class="form-group">
-                                                          <label for="exampleInputEmail1">Adharcard number</label>
-                                                          <input type="text" name="name" id="name" class="form-control" required placeholder="Enter Your Mobile Number">
-                                                       </div>
-                                                    </div>
-                                                    <div class="col-lg-12 col-sm-12">
-                                                       <div class="form-group">
-                                                          <label for="exampleInputEmail1">Upload Adhar</label>
-                                                          <input type="file" name="name" id="name" class="form-control" required placeholder="Enter Your E-mail">
-                                                       </div>
-                                                    </div>
-                                                   
-                                                    <!-- <div class="col-lg-12 col-sm-12">
-                                                       <div class="form-group">
-                                                          <div class="about-btn"><a routerlink="/" href="/" class="default-btn know-more-btn formBtn">Send Massage</a></div>
-                                                       </div>
-                                                       </div> -->
-                                                 </div>
-                                              </form>
-                                           </div>
-                                        </div>
-                                     </div>
-                                  </div>
-                               </div>
-                            </div>
-                         </div>
+   <div class="container">
+      <div class="row pt-45 paddintTop">
+         <div class="col-lg-5">
+            <div class="about-service-img aboutScootysHome sProducts">
+               <!-- <div class="about-man-img">
+                  <img src="assets/img/home3/scooty-5.png" alt="About Images">
+                  </div> -->
+               <div class="about-man-bgs">
+                  <img src="{{dataValue}}" alt="About Shape">
+               </div>
+               <div class="row">
+                  <div class="col-lg-3">
+                     <h2>Lio Lite</h2>
+                  </div>
+                  <div class="col-lg-8"> 
+                     <input type="number" [(ngModel)]="qty" value="1" min="0" max="100" step="1"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-7">
+            <div class="about-service-img aboutScootysHome sProducts">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <h2>Title</h2>
+                  </div>
+                  <div class="col-lg-6">
+                     <h2>Detail</h2>
+                  </div>
+                  <hr>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p>Title</p>
+                  </div>
+                  <div class="col-lg-6">
+                     <p>03</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p>Title</p>
+                  </div>
+                  <div class="col-lg-6">
+                     <p>03</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p>Title</p>
+                  </div>
+                  <div class="col-lg-6">
+                     <p>03</p>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p>Title</p>
+                  </div>
+                  <div class="col-lg-6">
+                     <p>03</p>
+                  </div>
+               </div>
+               <hr>
+               <div class="row">
+                  <div class="col-lg-6">
+                     <p> Total Payble Amount</p>
+                  </div>
+                  <div class="col-lg-6">
+                     <p>XYZ123</p>
+                  </div>
+               </div>
+               <div class="about-btn"><a (click)="open(mymodal)" href="javascript:void(0);" class="default-btn know-more-btn">Processed To Pay</a></div>
+               <!-- modal start -->
+               <ng-template #mymodal let-modal>
+                  <div class="alert alert-success" role="alert" [hidden]="!alerMsg">
+                     <h4 class="alert-heading">Booking Success</h4>
                       </div>
-                   </div>
-                   <!-- <div class="modal-footer">
-                      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Ok</button>
-                   </div> -->
-                </ng-template>
-                <!-- end here -->
-             </div>
+                  <div class="modal-header">
+                     <h4 class="modal-title" id="modal-basic-title">Enter Credentials For Booking</h4>
+                     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                  </div>
+                  <form id="contactForm">
+                  <div class="modal-body">
+                     <div class="about-area-two  pb-10 bookScooterAll mainFormCont checkFomsModal">
+                        <div class="container">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <div class="about-service-text">
+                                    <div class="row">
+                                       <div class="col-lg-12 col-sm-12">
+                                          <div class="choose-card contactSecondDiv">
+                                      
+                                                <div class="row">
+                                                   <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <label for="exampleInputEmail1">Name</label>
+                                                         <input type="text"  [(ngModel)]="detailCustomers.customer.user.name"  name="name" id="name" class="form-control" required placeholder="Enter Your Name">
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <label for="exampleInputEmail1">Mobile Number</label>
+                                                         <input type="text" [(ngModel)]="detailCustomers.mobile_no" name="mobile_no" id="mobile_no" class="form-control" required placeholder="Enter Your Mobile Number">
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <label for="exampleInputEmail1">E-mail</label>
+                                                         <input type="email" [(ngModel)]="detailCustomers.customer.user.email" name="email" id="email" class="form-control" required placeholder="Enter Your E-mail">
+                                                      </div>
+                                                   </div>
+                                                   <!-- <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <div class="about-btn"><a routerlink="/" href="/" class="default-btn know-more-btn formBtn">Send Massage</a></div>
+                                                      </div>
+                                                      </div> -->
+                                                </div>
+                               
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6">
+                                 <div class="about-service-text">
+                                    <div class="row">
+                                       <div class="col-lg-12 col-sm-12">
+                                          <div class="choose-card contactSecondDiv">
+                                     
+                                                <div class="row">
+                                                   <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <label for="exampleInputEmail1">Address</label>
+                                                         <input type="textarea" [(ngModel)]="detailCustomers.address" name="address"  class="form-control" placeholder="Enter Your Address">
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <label for="exampleInputEmail1">Adharcard number</label>
+                                                         <input type="text" [(ngModel)]="detailCustomers.adhaar_no" name="adhaar_no" id="adhaar_no" class="form-control" required placeholder="Enter Your Mobile Number">
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <label for="exampleInputEmail1">Upload Adhar</label>
+                                                         <input type="file"  (change)="onFileSelected($event)"  name="name" id="name" class="form-control" required placeholder="Enter Your E-mail">
+                                                         <div class="file-upload uploadFileInput">
+                                                            {{fileName || "No file uploaded yet."}}
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                   <!-- <div class="col-lg-12 col-sm-12">
+                                                      <div class="form-group">
+                                                         <div class="about-btn"><a routerlink="/" href="/" class="default-btn know-more-btn formBtn">Send Massage</a></div>
+                                                      </div>
+                                                      </div> -->
+                                                </div>
+                                         
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-outline-dark" (click)="bookData()">Booking</button>
+                  </div>
+               </ng-template>
+               <!-- end here -->
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="about-area-two pt-15 pb-10 referFrnd">
+   <div class="container">
+      <div class="row pt-45">
+         <div class="col-lg-6">
+            <div class="about-service-text abouServicesLeft">
+               <div class="row">
+                  <div  class="about-content">
+                     <span>Refer a Friend</span>
+                     <p>Refer your friend and get 50% off
+                        on Booking Amount.
+                     </p>
+                     <div class="about-btn">
+                        <a  routerlink="/" class="default-btn know-more-btn" 
+                           href="/">Refer Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="about-service-img aboutScootysHome">
+               <!-- <div class="about-man-img">
+                  <img src="assets/img/home3/scooty-5.png" alt="About Images">
+                  </div> -->
+               <div class="about-man-bg">
+                  <img src="assets/img/home3/refers.png" alt="About Shape">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div>
+   <!-- <div class="inner-banner inner-bg2">
+      <div class="container">
+          <div class="inner-title">
+              <h3>Sign In</h3>
+              <ul>
+                  <li><a routerLink="/">Home</a></li>
+                  <li><i class='bx bxs-chevrons-right'></i></li>
+                  <li>Sign In</li>
+              </ul>
           </div>
-       </div>
-    </div>
- </div>
- <div class="about-area-two pt-15 pb-10 referFrnd">
-    <div class="container">
-       <div class="row pt-45">
-          <div class="col-lg-6">
-             <div class="about-service-text abouServicesLeft">
-                <div class="row">
-                   <div  class="about-content">
-                      <span>Refer a Friend</span>
-                      <p>Refer your friend and get 50% off
-                         on Booking Amount.
-                      </p>
-                      <div class="about-btn">
-                         <a  routerlink="/" class="default-btn know-more-btn" 
-                            href="/">Refer Now</a>
+      </div>
+      </div> 
+   <section class="sign-in-area ptb-100">
+      <div class="container">
+          <div class="contact-wrap-form sign-in-width">
+              <div class="scetion-title text-center">
+                  <span>Sign In</span>
+                  <h2>Sign In to your account!</h2>
+                  <p></p>
+              </div>
+      
+              <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                  <div class="alert alert-danger" role="alert" *ngIf=ErrorMsg>
+                      Something Wrong
+                    </div>
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="form-group">
+                              <input class="form-control" formControlName="email"   type="email" placeholder="Username or Email"
+                              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                              <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                  <div *ngIf="f.email.errors.required">Username is required</div>
+                              </div>
+                          </div>
                       </div>
-                   </div>
-                </div>
-             </div>
+      
+                      <div class="col-12">
+                          <div class="form-group">
+                              <input class="form-control" formControlName="password"  type="password"  placeholder="Password"
+                              [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+              <div *ngIf="f.password.errors.required">Password is required</div>
           </div>
-          <div class="col-lg-6">
-             <div class="about-service-img aboutScootysHome">
-                <!-- <div class="about-man-img">
-                   <img src="assets/img/home3/scooty-5.png" alt="About Images">
-                   </div> -->
-                <div class="about-man-bg">
-                   <img src="assets/img/home3/refers.png" alt="About Shape">
-                </div>
-             </div>
+                          </div>
+                      </div>
+      
+                      <div class="col-lg-6 col-sm-6 form-condition">
+                          <div class="agree-label">
+                              <input type="checkbox" id="chb1">
+                              <label for="chb1">Remember Me</label>
+                          </div>
+                      </div>
+      
+                      <div class="col-lg-6 col-sm-6">
+                          <a class="forget" routerLink="/recover-password">Forgot my password?</a>
+                      </div>
+      
+                      <div class="col-12 text-center">
+                          <button class="default-btn btn-two sign-btn"   type="submit">Sign In Now</button>
+                      </div>
+      
+                      <div class="col-12">
+                          <p class="account-desc">Not a member? <a routerLink="/sign-up">Register</a></p>
+                      </div>
+                  </div>
+              </form>
           </div>
-       </div>
-    </div>
- </div>
+      </div>
+      </section> -->
+</div>

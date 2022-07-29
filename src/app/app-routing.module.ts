@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BookingDetailComponent } from "./admin/booking-detail/booking-detail.component";
 
 const routes: Routes = [
     {
@@ -22,7 +23,11 @@ const routes: Routes = [
         path: 'reviews',
         loadChildren: () => import('./components/pages/customer-reviews/customer-m.module').then(m => m.CustomerMModule),
     },
-    
+    {
+        path: 'admin',
+        loadChildren: () => import('./admin/admin/admins.module').then(m => m.AdminsModule),
+    },
+    { path: 'admin/booking-detail', component: BookingDetailComponent }
 ];
 
 

@@ -1,0 +1,53 @@
+
+<div class="about-area-two pt-15 pb-10 bookScooterAll adminLogins">
+    <div class="container">
+        <div class="scetion-title text-center">
+            <span>Booking Detail</span>
+           
+            
+        </div>
+
+        <div class="row pt-40">
+            
+            
+           
+            <div class="col-lg-12">
+                <div class="about-service-text">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Mobile No</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Adhaar No</th>
+                            <th scope="col">Adhaar Img</th>
+                            <th scope="col">Items</th>
+                            <th scope="col">Payment</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let bookigDatas of bookigData">
+                            <th scope="row">{{bookigDatas.id}}</th>
+                            <td>{{bookigDatas.customer.user.name}}</td>
+                            <td>{{bookigDatas.customer.user.email}}</td>
+                            <td>{{bookigDatas.customer.mobile_no}}</td>
+                            <td>{{bookigDatas.customer.address}}</td>
+                            <td>{{bookigDatas.customer.adhaar_no}}</td>
+                            <td><img style="width: 100px;" src="{{bookigDatas.customer.adhaar_img.upload}}"/></td>
+                            <td *ngFor="let item of bookigDatas.items">{{item.color}}</td>
+                            <td>{{bookigDatas.created_at | date:'dd-MM-yy'}}</td>
+                            
+                            
+                          </tr>
+                         
+                          
+                        </tbody>
+                      </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
