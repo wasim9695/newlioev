@@ -1,6 +1,4 @@
-
-export class Uploads{
+export class paymentUploads{
     upload: string;
     id: number; 
-   
 }

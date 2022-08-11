@@ -5120,12 +5120,18 @@ ul.social-bottoms li {
 }
 .whatsappApps {
     position: fixed;
-    top: 50%;
     right: 0;
     border-radius: 50%;
     background: #70cf36;
     z-index: 9500;
-    /* transform: rotate(-90deg); */
+    bottom: 0;
+    margin-bottom: 12px
+}
+.whatsappApps img{
+    width: 60px;
+}
+#toTop{
+    display: none !important;
 }
 
 .bottom-text .social-bottom .bx{
@@ -5764,6 +5770,72 @@ table.table {
     font-size: 25px;
 }
 
+.imgQrCode{
+    max-width: 150px;
+    margin: 0 auto;
+}
+.imgQrCode img{
+    width: 100%;
+}
+
+.borderClass{
+    border-right: 3px solid #dededede;
+}
+.fontClass label{
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 46px;
+    color: #000000;
+    margin: 0 auto;
+}
+
+.fontClass p span{
+    text-align: left;
+    color: #000000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fontClass b {
+    font-weight: bolder;
+    color: #000000;
+    /* padding-left: 29px; */
+    float: right;
+    margin-right: 50px;
+}
+
+.red{
+    background: red;
+    height: 35px;
+    width: 35px;
+    display: block;
+    border-radius: 50px;
+}
+
+.white{
+    background: rgb(202, 199, 199);
+    height: 35px;
+    width: 35px;
+    display: block;
+    border-radius: 50px;
+}
+
+.fontIconsOne{
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+.fontIconsTwo{
+    font-size: 20px;
+    cursor: pointer;
+    color: blueviolet;
+}
 // end main css
 .phone-btn.bookNowAdd{
     background: #02374E;
@@ -5778,6 +5850,9 @@ font-family: 'Arial';
 }
 
 
+.sectionFeature.sepMainfeature{
+    padding-top: 140px;
+}
 /*==================================
 Back To Top Button Style
 =====================================*/

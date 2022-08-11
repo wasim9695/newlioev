@@ -5,13 +5,16 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import {catchError, map} from 'rxjs/operators';
 import {throwError} from 'rxjs';
 import {allModel} from '../allModels';
+import { DetailCustomers } from "../allModels/detailCustomer.model";
 @Injectable({ providedIn: 'root' })
 export class ServicesService {
   private url = '/api/token/';
   private refreshUrl = '/api/token/refresh/';
   private adhaarUpload = '/adhaarupload/';
-  private addBokings = '/orders';
-  private getBooking = '/orders';
+  private paymentuploads = '/paymentupload/';
+  private addBokings = '/create-order/';
+  private getBooking = '/orders/';
+  private approvals = '/payment-approve';
   private currentUserSubject: BehaviorSubject<allModel>;
     public currentUser: Observable<allModel>;
   constructor(private http: HttpClient,
@@ -64,13 +67,25 @@ export class ServicesService {
       return this.http.post(`${this.env.apiUrl + this.adhaarUpload}`, adhaarUploads);
     }
 
-    bookingAdd(addBoking: Object): Observable<any>{
+    adduploadPay(adhaarUploadspay: Object): Observable<any>{
+      const token = localStorage.getItem("access_token");
+    // const header = new Headers({ 'Authorization': `Bearer ${token}` });
+    // const options = {
+    //    headers: header,
+    // };
+      return this.http.post(`${this.env.apiUrl + this.paymentuploads}`, adhaarUploadspay);
+    }
+
+    bookingAdd(addBoking: DetailCustomers): Observable<DetailCustomers[]>{
+      const token = localStorage.getItem("access_token");
       //const token = localStorage.getItem("access_token");
     //const header = new Headers({ 'Authorization': `Bearer ${token}` });
     // const options = {
     //    headers: header,
     // };
-      return this.http.post(`${this.env.apiUrl + this.addBokings}`, addBoking);
+    //console.log(addBoking);
+    //console.log(this.http.post(`${this.env.apiUrl + this.addBokings}`, addBoking));
+      return this.http.post<DetailCustomers[]>(`${this.env.apiUrl + this.addBokings}`, addBoking);
     }
 
 
@@ -83,6 +98,17 @@ export class ServicesService {
       const url = `${this.env.apiUrl + this.getBooking}`;
       //console.log(this.http.get(url));
       return this.http.get(url);
+    }
+
+
+    payApproval(id: any, userModel) {
+      const url = `${this.env.apiUrl + this.approvals}/${id}`;
+      return this.http.put(url, userModel);
+    }
+
+    deletes(id: any) {
+      const url = `${this.env.apiUrl + this.getBooking}/${id}`;
+      return this.http.delete(url);
     }
     
 }

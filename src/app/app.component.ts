@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
+import { Router, ActivatedRoute, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
+import {allModel} from './components/all-common/allModels';
+import {ServicesService} from './components/all-common/allServices';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { first } from 'rxjs/operators';
 declare let $: any;
 
 @Component({
@@ -17,14 +21,71 @@ declare let $: any;
 })
 export class AppComponent implements OnInit {
     location: any;
+    public user = new allModel();
     routerSubscription: any;
+    loginForm: FormGroup;
+    submitted = false;
+    returnUrl: string;
+    loading: boolean;
 
-    constructor(private router: Router) {
+    constructor(private router: Router,private route: ActivatedRoute, private formBuilder: FormBuilder,
+        private userService: ServicesService,) {
     }
 
     ngOnInit(){
         this.recallJsFuntions();
+        this.loginForm = this.formBuilder.group({
+            email: ['', Validators.required],
+            password: ['', Validators.required]
+        });
+        //this.userService.logout();
+        // get return url from route parameters or default to '/'
+       this.returnUrl = this.route.snapshot.queryParams['/checkout'] || '/checkout';
+          //this.getLogin();
+          this.onSubmit();
     }
+
+
+    get f() { return this.loginForm.controls; }
+
+    onSubmit() {
+        this.submitted = true;
+  
+        // reset alerts on submit
+    
+  
+        // stop here if form is invalid
+        // if (this.loginForm.invalid) {
+        //     return;
+        // }
+  
+        this.loading = true;
+       // this.f.email.value='lioevadmin_temp@gmail.com';
+        this.userService.login('lioevadmin_temp@gmail.com', 'G4Growth710')
+            .pipe(first())
+            .subscribe(
+                data => {
+                     console.log(data);
+                  // if(data.status===false){
+                  //   this.ErrorMsg = true;
+                  //   return false;
+                  // }else{
+                  //  localStorage.getItem('currentUser');
+  
+                  //  //this.router.navigate([this.returnUrl])
+                  //  .then(() => {
+                  //   window.location.reload();
+                  // });
+               
+                  // }
+                },
+                error => {
+                //   this.loading = false;
+                //   this.ErrorMsg = true;
+                });
+    }
+
+
 
     recallJsFuntions() {
         this.router.events

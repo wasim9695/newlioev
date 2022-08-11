@@ -24,21 +24,27 @@
                             <th scope="col">Adhaar No</th>
                             <th scope="col">Adhaar Img</th>
                             <th scope="col">Items</th>
-                            <th scope="col">Payment</th>
+                            <th scope="col">Order Date</th>
+                            <th scope="col">Actions</th>
                             
                           </tr>
                         </thead>
                         <tbody>
-                          <tr *ngFor="let bookigDatas of bookigData">
-                            <th scope="row">{{bookigDatas.id}}</th>
+                          <tr *ngFor="let bookigDatas of bookigData; let i = index">
+                            <th scope="row">{{i+1}}</th>
                             <td>{{bookigDatas.customer.user.name}}</td>
                             <td>{{bookigDatas.customer.user.email}}</td>
                             <td>{{bookigDatas.customer.mobile_no}}</td>
                             <td>{{bookigDatas.customer.address}}</td>
                             <td>{{bookigDatas.customer.adhaar_no}}</td>
                             <td><img style="width: 100px;" src="{{bookigDatas.customer.adhaar_img.upload}}"/></td>
-                            <td *ngFor="let item of bookigDatas.items">{{item.color}}</td>
+                            <td *ngFor="let item of bookigDatas.items"><div class="red" *ngIf="item.color=='Red'"></div>
+                              <div class="white" *ngIf="item.color==='white'"></div>
+                            </td>
                             <td>{{bookigDatas.created_at | date:'dd-MM-yy'}}</td>
+                            <td><i (click)="delete(bookigDatas)" class="bx bx-trash fontIconsOne"></i>|<span *ngIf="bookigDatas.payment.status=='approved'"><i (click)="approval(bookigDatas)" class="bx bx-check-circle fontIconsTwo"></i>
+                            </span><span *ngIf="bookigDatas.payment.status=='pending'"><i (click)="approval(bookigDatas)" style="color:'red'" class="bx bx-check-circle fontIconsTwo"></i>
+                            </span></td>
                             
                             
                           </tr>
@@ -46,6 +52,7 @@
                           
                         </tbody>
                       </table>
+                      
             </div>
         </div>
         

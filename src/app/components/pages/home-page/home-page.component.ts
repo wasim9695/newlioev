@@ -27,5 +27,8 @@ export class HomePageComponent implements OnInit {
   singleClick(){
     this.router.navigate(['/product-detail']);
   }
+  features(){
+    this.router.navigate(['/all/feature']);
+  }
 
 }

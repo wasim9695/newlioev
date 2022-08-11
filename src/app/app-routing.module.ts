@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BookingDetailComponent } from "./admin/booking-detail/booking-detail.component";
-
+import { FeatureallComponent } from './components/pages/featureall/featureall.component';
+import { PrivacyPolicesComponent } from './components/pages/privacy-polices/privacy-polices.component';
+import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 const routes: Routes = [
     {
      path: '',
@@ -27,7 +29,10 @@ const routes: Routes = [
         path: 'admin',
         loadChildren: () => import('./admin/admin/admins.module').then(m => m.AdminsModule),
     },
-    { path: 'admin/booking-detail', component: BookingDetailComponent }
+    { path: 'admin/booking-detail', component: BookingDetailComponent },
+    {path:'all/feature', component:FeatureallComponent},
+    {path:'privacy', component:PrivacyPolicesComponent},
+    {path:'conditions', component:TermsConditionsComponent}
 ];
 
 

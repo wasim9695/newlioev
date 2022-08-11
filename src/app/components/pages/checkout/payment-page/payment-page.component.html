@@ -1,1 +1,39 @@
-<p>payment-page works!</p>
+<ng-template #content let-modal>
+   <div class="modal-header">
+     <h4 class="modal-title" id="modal-basic-title">Payment Method</h4>
+     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+       <span aria-hidden="true">&times;</span>
+     </button>
+   </div>
+   <div class="modal-body">
+     <form>
+      <div class="container">
+         <div class="row fontClass">
+            <div class="col-md-4 borderClass">
+            <div class="imgQrCode"><img src="https://www.researchgate.net/profile/Julinda-Stefa/publication/333393972/figure/fig2/AS:763009894981633@1558927143500/Screenshot-of-two-mobile-apps-employing-scan-and-pay-through-QR-code-to-read-the-address.ppm"/></div></div>
+            <div class="col-md-4 borderClass"><h4 class="modal-title">Bank Details</h4>
+            <p><span>Account No:-</span>  <b>01.000.2010001.1001</b></p>
+            <p><span>Bank Name:-</span>   <b>01.000.2010001.1001</b></p>
+            <p><span>Ifsc Code:-</span>   <b>01.000.2010001.1001</b></p>
+            <p><span>Account Type:-</span> <b>Saving/Current</b></p></div>
+            <div class="col-md-4"> <div class="form-group">
+               <label for="exampleInputEmail1">Upload Payment ScreenSort</label>
+               <input type="file"   name="name" id="name" class="form-control" required placeholder="Enter Your E-mail">
+               <div class="file-upload uploadFileInput">
+                 
+               </div>
+            </div></div>
+         </div>
+      </div>
+     </form>
+   </div>
+   <div class="modal-footer">
+     <button type="button" style="border: 0;" class="default-btn know-more-btn" (click)="modal.close('Save click')">Pay</button>
+   </div>
+ </ng-template>
+ 
+ <button class="btn btn-lg btn-outline-primary" (click)="openModal()">Launch demo modal</button>
+ 
+ <hr>
+
+ 
