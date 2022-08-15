@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdizo_ng=self.webpackChunkdizo_ng||[]).push([[592],{7847:(e,u,c)=>{c.d(u,{Y:()=>t});class t{constructor(){this._subs=[]}add(...s){this._subs=this._subs.concat(s)}set sink(s){this._subs.push(s)}unsubscribe(){this._subs.forEach(s=>s&&"function"==typeof s.unsubscribe&&s.unsubscribe()),this._subs=[]}}},2174:(e,u,c)=>{c.d(u,{r:()=>n});class n{}}}]);
