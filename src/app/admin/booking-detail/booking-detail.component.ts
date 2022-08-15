@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ServicesService} from '../../components/all-common/allServices';
+import {NgbModal, ModalDismissReasons, NgbModalOptions, NgbActiveModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-booking-detail',
@@ -8,15 +10,24 @@ import {ServicesService} from '../../components/all-common/allServices';
 })
 export class BookingDetailComponent implements OnInit {
 bookigData: any=[];
+enquiryData: any=[];
 status:any;
 page = 1;
   pageSize = 4;
   collectionSize: number;
   currentRate = 8;
-  constructor(private servicesService:ServicesService) { }
+  constructor(private servicesService:ServicesService,
+    private modalService: NgbModal, private route: ActivatedRoute,
+    private router: Router,) { }
 
   ngOnInit(): void {
+    console.log(sessionStorage.getItem('admin'));
+   if(sessionStorage.getItem('admin')===null){
+    this.router.navigate(['/admin'])
+   }
+
     this.getAlls();
+    this.getAllEnq();
   }
 
   getAlls(){
@@ -27,7 +38,7 @@ page = 1;
             // modalRef.componentInstance.my_modal_title = 'I your title';
             // modalRef.componentInstance.my_modal_content = 'I am your content';
           
-                console.log(data);
+               // console.log(data);
                 
                 this.bookigData=data;
            },
@@ -49,7 +60,7 @@ this.servicesService.payApproval(event.payment.id, this.status)
      // modalRef.componentInstance.my_modal_title = 'I your title';
      // modalRef.componentInstance.my_modal_content = 'I am your content';
    
-         console.log(data);
+       //  console.log(data);
          //this.bookigData=data;
     },
     error => {
@@ -72,7 +83,7 @@ this.servicesService.payApproval(event.payment.id, this.status)
            // modalRef.componentInstance.my_modal_title = 'I your title';
            // modalRef.componentInstance.my_modal_content = 'I am your content';
          
-               console.log(data);
+               //console.log(data);
                this.getAlls();
                //this.bookigData=data;
           },
@@ -84,5 +95,26 @@ this.servicesService.payApproval(event.payment.id, this.status)
       
         }
   }
+
+  getAllEnq(){
+    this.servicesService.getContact()
+       .subscribe(
+           data => {
+            // const modalRef = this.modalService.open(PaymentPageComponent);
+            // modalRef.componentInstance.my_modal_title = 'I your title';
+            // modalRef.componentInstance.my_modal_content = 'I am your content';
+          
+                
+                
+                this.enquiryData=data;
+                console.log(data);
+           },
+           error => {
+            
+           });
+  }
+
+
+
 
 }

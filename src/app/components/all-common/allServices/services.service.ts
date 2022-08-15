@@ -6,6 +6,7 @@ import {catchError, map} from 'rxjs/operators';
 import {throwError} from 'rxjs';
 import {allModel} from '../allModels';
 import { DetailCustomers } from "../allModels/detailCustomer.model";
+import {Contact} from '../../all-common/allModels/contact.model';
 @Injectable({ providedIn: 'root' })
 export class ServicesService {
   private url = '/api/token/';
@@ -15,6 +16,8 @@ export class ServicesService {
   private addBokings = '/create-order/';
   private getBooking = '/orders/';
   private approvals = '/payment-approve';
+  private addContcts = '/create-query/';
+  private getContcts = '/list-all-queries/';
   private currentUserSubject: BehaviorSubject<allModel>;
     public currentUser: Observable<allModel>;
   constructor(private http: HttpClient,
@@ -89,6 +92,8 @@ export class ServicesService {
     }
 
 
+
+
     allGetList() {
        const token = localStorage.getItem("access_token");
     const header = new Headers({ 'Authorization': `Bearer ${token}` });
@@ -111,4 +116,13 @@ export class ServicesService {
       return this.http.delete(url);
     }
     
+
+    addContact(add: Contact): Observable<Contact[]>{
+      const token = localStorage.getItem("access_token");
+      return this.http.post<Contact[]>(`${this.env.apiUrl + this.addContcts}`, add);
+    }
+    getContact(): Observable<Contact[]>{
+      const token = localStorage.getItem("access_token");
+      return this.http.get<Contact[]>(`${this.env.apiUrl + this.getContcts}`);
+    }
 }

@@ -5,6 +5,7 @@ import { AdminComponent } from "../admin/admin.component";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BookingDetailComponent } from '../booking-detail/booking-detail.component';
 import {ServicesService} from '../../components/all-common/allServices';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import {ServicesService} from '../../components/all-common/allServices';
     CommonModule,
     AdminsRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers:[ServicesService]
 })

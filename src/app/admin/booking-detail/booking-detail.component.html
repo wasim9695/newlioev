@@ -1,60 +1,140 @@
 
-<div class="about-area-two pt-15 pb-10 bookScooterAll adminLogins">
-    <div class="container">
-        <div class="scetion-title text-center">
-            <span>Booking Detail</span>
-           
-            
-        </div>
 
-        <div class="row pt-40">
-            
-            
-           
-            <div class="col-lg-12">
-                <div class="about-service-text">
-                    <table class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Mobile No</th>
-                            <th scope="col">Address</th>
-                            <th scope="col">Adhaar No</th>
-                            <th scope="col">Adhaar Img</th>
-                            <th scope="col">Items</th>
-                            <th scope="col">Order Date</th>
-                            <th scope="col">Actions</th>
-                            
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr *ngFor="let bookigDatas of bookigData; let i = index">
-                            <th scope="row">{{i+1}}</th>
-                            <td>{{bookigDatas.customer.user.name}}</td>
-                            <td>{{bookigDatas.customer.user.email}}</td>
-                            <td>{{bookigDatas.customer.mobile_no}}</td>
-                            <td>{{bookigDatas.customer.address}}</td>
-                            <td>{{bookigDatas.customer.adhaar_no}}</td>
-                            <td><img style="width: 100px;" src="{{bookigDatas.customer.adhaar_img.upload}}"/></td>
-                            <td *ngFor="let item of bookigDatas.items"><div class="red" *ngIf="item.color=='Red'"></div>
-                              <div class="white" *ngIf="item.color==='white'"></div>
-                            </td>
-                            <td>{{bookigDatas.created_at | date:'dd-MM-yy'}}</td>
-                            <td><i (click)="delete(bookigDatas)" class="bx bx-trash fontIconsOne"></i>|<span *ngIf="bookigDatas.payment.status=='approved'"><i (click)="approval(bookigDatas)" class="bx bx-check-circle fontIconsTwo"></i>
-                            </span><span *ngIf="bookigDatas.payment.status=='pending'"><i (click)="approval(bookigDatas)" style="color:'red'" class="bx bx-check-circle fontIconsTwo"></i>
-                            </span></td>
-                            
-                            
-                          </tr>
-                         
+<div class="app">
+  <div class="container mt-5">
+      <h1 class="text-center text-white mb-4">Tabs</h1>
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-12">
+              <div class="bg-white">
+                  <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation"> <button class="nav-link active" id="faq_tab_1-tab" data-bs-toggle="tab" data-bs-target="#faq_tab_1" type="button" role="tab" aria-controls="faq_tab_1" aria-selected="true">
+                              <div class="d-flex flex-column lh-lg"> <i class='bx bxs-plane-alt'></i>  <span>Booking Detail</span> </div>
+                          </button> </li>
+                      <li class="nav-item" role="presentation"> <button class="nav-link" id="faq_tab_2-tab" data-bs-toggle="tab" data-bs-target="#faq_tab_2" type="button" role="tab" aria-controls="faq_tab_2" aria-selected="false">
+                              <div class="d-flex flex-column lh-lg"> <i class='bx bxs-shopping-bag'></i> <span>Enquiry</span> </div>
+                          </button> </li>
+                  
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade active show" id="faq_tab_1" role="tabpanel" aria-labelledby="faq_tab_1-tab">
                           
-                        </tbody>
-                      </table>
-                      
-            </div>
-        </div>
-        
-    </div>
+<div class="about-area-two pt-15 pb-10 bookScooterAll adminLogins">
+  <div class="container">
+      <div class="scetion-title text-center">
+         
+         
+          
+      </div>
+
+      <div class="row pt-40">
+          
+          
+         
+          <div class="col-lg-12">
+              <div class="about-service-text">
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Mobile No</th>
+                          <th scope="col">Address</th>
+                          <th scope="col">Adhaar No</th>
+                          <th scope="col">Adhaar Img</th>
+                          <th scope="col">Items</th>
+                          <th scope="col">Order Date</th>
+                          <th scope="col">Actions</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let bookigDatas of bookigData; let i = index">
+                          <th scope="row">{{i+1}}</th>
+                          <td>{{bookigDatas.customer.user.name}}</td>
+                          <td>{{bookigDatas.customer.user.email}}</td>
+                          <td>{{bookigDatas.customer.mobile_no}}</td>
+                          <td>{{bookigDatas.customer.address}}</td>
+                          <td>{{bookigDatas.customer.adhaar_no}}</td>
+                          <td><img style="width: 100px;" src="{{bookigDatas.customer.adhaar_img.upload}}"/></td>
+                          <td *ngFor="let item of bookigDatas.items"><div class="red" *ngIf="item.color=='Red'"></div>
+                            <div class="white" *ngIf="item.color==='white'"></div>
+                          </td>
+                          <td>{{bookigDatas.created_at | date:'dd-MM-yy'}}</td>
+                          <td><i (click)="delete(bookigDatas)" class="bx bx-trash fontIconsOne"></i>|<span *ngIf="bookigDatas.payment.status=='approved'"><i (click)="approval(bookigDatas)" class="bx bx-check-circle fontIconsTwo"></i>
+                          </span><span *ngIf="bookigDatas.payment.status=='pending'"><i (click)="approval(bookigDatas)" style="color:'red'" class="bx bx-check-circle fontIconsTwo"></i>
+                          </span></td>
+                          
+                          
+                        </tr>
+                       
+                        
+                      </tbody>
+                    </table>
+                    
+          </div>
+      </div>
+      
+  </div>
 </div>
+                      </div>
+                      
+                      
+                      
+                  </div>
+
+                  <div class="tab-pane fade" id="faq_tab_2" role="tabpane2" aria-labelledby="faq_tab_2-tab">
+                    <div class="about-area-two pt-15 pb-10 bookScooterAll adminLogins">
+                      <div class="container">
+                          <div class="scetion-title text-center">
+                             
+                             
+                              
+                          </div>
+                    
+                          <div class="row pt-40">
+                              
+                              
+                             
+                              <div class="col-lg-12">
+                                  <div class="about-service-text">
+                                      <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th scope="col">#</th>
+                                              <th scope="col">Name</th>
+                                              <th scope="col">Email</th>
+                                              <th scope="col">Mobile No</th>
+                                              <th scope="col">Message</th>
+                                          
+                                              
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr *ngFor="let enquiryDatas of enquiryData; let i = index">
+                                              <th scope="row">{{i+1}}</th>
+                                              <td>{{enquiryDatas.name}}</td>
+                                              <td>{{enquiryDatas.email}}</td>
+                                              <td>{{enquiryDatas.phone}}</td>
+                                              <td>{{enquiryDatas.message}}</td>
+                                              
+                                            </tr>
+                                           
+                                            
+                                          </tbody>
+                                        </table>
+                                        
+                              </div>
+                          </div>
+                          
+                      </div>
+                    </div>
+                                          </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+
+

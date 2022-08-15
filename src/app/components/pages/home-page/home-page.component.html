@@ -634,36 +634,41 @@
                             <div class="choose-card bookScooter">
                                
                                     <form id="contactForm">
+                                        <div class="alert alert-success" role="alert" [hidden]="!alerMsg">
+                                            <h4 class="alert-heading">{{this.errorM}}</h4>
+                                            <h4 class="alert-heading">{{this.msg}}</h4>
+                                            
+                                             </div>
                                         <div class="row">
                                             <div class="col-lg-12 col-sm-12">
                                                <div class="form-group">
                                                 <label for="exampleInputEmail1">Name</label>
-                                                   <input type="text" name="name" id="name" class="form-control" required placeholder="Enter Your Name">
+                                                   <input type="text" [(ngModel)]="contact.name"  name="name" id="name" class="form-control" required placeholder="Enter Your Name">
                                                </div>
                                             </div>
                                             <div class="col-lg-12 col-sm-12">
                                                 <div class="form-group">
                                                  <label for="exampleInputEmail1">Mobile Number</label>
-                                                    <input type="text" name="name" id="name" class="form-control" required placeholder="Enter Your Mobile Number">
+                                                    <input type="text" [(ngModel)]="contact.phone" name="phone"  class="form-control" required placeholder="Enter Your Mobile Number">
                                                 </div>
                                              </div>
                                              <div class="col-lg-12 col-sm-12">
                                                 <div class="form-group">
                                                  <label for="exampleInputEmail1">E-mail</label>
-                                                    <input type="email" name="name" id="name" class="form-control" required placeholder="Enter Your E-mail">
+                                                    <input type="email" [(ngModel)]="contact.email" name="email"  class="form-control" required placeholder="Enter Your E-mail">
                                                 </div>
                                              </div>
                                              
                                              <div class="col-lg-12 col-sm-12">
                                                 <div class="form-group">
                                                  <label for="exampleInputEmail1">Messages</label>
-                                                 <textarea rows="4" class="form-control" placeholder="Enter Your Messages"></textarea>
+                                                 <textarea rows="4" [(ngModel)]="contact.message" name="message" class="form-control" placeholder="Enter Your Messages"></textarea>
                                                 </div>
                                              </div>
                                              
                                              <div class="col-lg-12 col-sm-12">
                                                 <div class="form-group">
-                                                    <div class="about-btn"><a routerlink="/" href="/" class="default-btn know-more-btn formBtn">Book Now</a></div> 
+                                                    <div class="about-btn"><a  href="javascript:void(0)" (click)="enquiryF()" class="default-btn know-more-btn formBtn">Book Now</a></div> 
                                                 </div>
                                              </div>
                                              

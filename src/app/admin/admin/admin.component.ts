@@ -19,6 +19,7 @@ export class AdminComponent implements OnInit {
 
   loginAdmin(){
     if(this.adUserName==='Admin' && this.adUserPass==='Admin@123'){
+      sessionStorage.setItem('admin', this.adUserName);
       this.router.navigate(['/admin/booking-detail'])
     }else{
       alert("wrong detail");
