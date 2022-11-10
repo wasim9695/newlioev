@@ -11,7 +11,8 @@ export class EnvService {
   // api url for cloud
   //public apiUrl = 'http://localhost:4200/rest';
  // public wssUrl = 'wss://134.209.159.96/rest/ws';
- apiUrl = 'http://ec2-15-207-248-129.ap-south-1.compute.amazonaws.com';
+ // apiUrl = 'http://ec2-15-207-248-129.ap-south-1.compute.amazonaws.com';
+ apiUrl = 'http://backend.lioev.com';
  //wssUrl = 'ws://localhost:4200/rest/ws';
   // Whether or not to enable debug mode
   public enableDebug = true;

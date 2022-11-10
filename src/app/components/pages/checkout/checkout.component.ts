@@ -29,6 +29,7 @@ export class CheckoutComponent extends SubSink  implements OnInit {
   public user = new allModel();
   public payments:boolean=false;
   public firstModel:boolean=true;
+  public afterMsg:boolean=false;
   @ViewChild('content') content: any;
   // modalRef?: NgbModalRef;
   // @ViewChild(PaymentPageComponent)
@@ -143,7 +144,7 @@ export class CheckoutComponent extends SubSink  implements OnInit {
   // }
   dataLoad(){
     if(this.colorid==1){
-      this.dataValue = "assets/img/home3/scooty-5.png";
+      this.dataValue = "assets/img/home3/scooty-1.png";
      // console.log("1");
       }else if(this.colorid==2){
         //console.log("2");
@@ -152,6 +153,10 @@ export class CheckoutComponent extends SubSink  implements OnInit {
       else if(this.colorid==3){
         //console.log("3");
         this.dataValue = "assets/img/home3/scooty-2.png";
+      }
+      else if(this.colorid==4){
+        //console.log("3");
+        this.dataValue = "assets/img/home3/scooty-3.png";
       }else{
         
       }
@@ -231,8 +236,9 @@ export class CheckoutComponent extends SubSink  implements OnInit {
      console.log("final", this.detailCustomers);
      //return false;
        this.userService.bookingAdd(this.detailCustomers).subscribe(data => {
-                console.log("dddd", data);
-              this.modalService.dismissAll();
+                //console.log("dddd", data);
+              //this.modalService.dismissAll();
+              this.afterMsg=true;
               //  this.payments=true;
            },
            error => {

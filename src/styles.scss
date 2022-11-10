@@ -5338,6 +5338,7 @@ padding-top: 40px;
 }
 
 
+
 // end 
 
 .about-service-img.aboutScootysHome.sProducts{
@@ -5521,7 +5522,8 @@ form#contactForm .form-group > label{
         border-radius: 4px;
     }
 .checkoutMain .about-service-img.aboutScootysHome.sProducts .about-man-bgs {
-    width: 83%;
+    width: 62%;
+    margin-bottom: 12px;
 }
 
 .checkoutMain .sProducts h2{
@@ -5836,6 +5838,53 @@ table.table {
     cursor: pointer;
     color: blueviolet;
 }
+.owl-item.active.center {
+    padding-bottom: 31px;
+    border: 1px solid #ddd;
+    box-shadow:0 0 15px rgb(0 0 0 / 10%) ;
+}
+
+.prdValues{
+    width: 70%;
+    margin: 0 auto;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* align-items: center; */
+    display: block;
+}
+
+.secontSection img.sortImages{
+    width: 47%;
+    margin-top: 12px;
+}
+
+
+.checkUI{
+    font-size: 100px;
+    color: green;
+}
+.mdalTitle{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+.dataPa{
+    color: #000000;
+    font-family: ui-monospace;
+}
+
+.backToHome{
+    width: 30%;
+    margin:0 auto;
+}
+.homeImagesFirst{
+    width: 70%;
+    margin: 0 auto;
+
+    /* text-align: center; */
+    display: block;
+}
+
 // end main css
 .phone-btn.bookNowAdd{
     background: #02374E;

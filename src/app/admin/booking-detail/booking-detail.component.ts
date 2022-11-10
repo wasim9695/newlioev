@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ServicesService} from '../../components/all-common/allServices';
 import {NgbModal, ModalDismissReasons, NgbModalOptions, NgbActiveModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { Router, ActivatedRoute } from '@angular/router';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-booking-detail',
@@ -12,10 +13,14 @@ export class BookingDetailComponent implements OnInit {
 bookigData: any=[];
 enquiryData: any=[];
 status:any;
-page = 1;
+// page = 1;
+//   pageSize = 4;
+  page = 1;
   pageSize = 4;
-  collectionSize: number;
+  // collectionSize: number;
+  collectionSize = this.bookigData.length;
   currentRate = 8;
+  countries: any;
   constructor(private servicesService:ServicesService,
     private modalService: NgbModal, private route: ActivatedRoute,
     private router: Router,) { }
@@ -112,6 +117,12 @@ this.servicesService.payApproval(event.payment.id, this.status)
            error => {
             
            });
+  }
+
+  refreshCountries() {
+    this.countries = this.bookigData
+      .map((any, i) => ({id: i + 1, ...any}))
+      .slice((this.page - 1) * this.pageSize, (this.page - 1) * this.pageSize + this.pageSize);
   }
 
 

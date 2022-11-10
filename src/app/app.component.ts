@@ -61,7 +61,7 @@ export class AppComponent implements OnInit {
   
         this.loading = true;
        // this.f.email.value='lioevadmin_temp@gmail.com';
-        this.userService.login('lioevadmin_temp@gmail.com', 'G4Growth710')
+        this.userService.login('admin@lioev.com', 'G4Growth710')
             .pipe(first())
             .subscribe(
                 data => {

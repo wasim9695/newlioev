@@ -31,7 +31,7 @@ export class ProductDetailComponent implements OnInit {
 
   backdata(){
     if(this.colorid==1){
-      this.dataValue = "assets/img/home3/scooty-5.png";
+      this.dataValue = "assets/img/home3/scooty-1.png";
      // console.log("1");
       }else if(this.colorid==2){
         //console.log("2");
@@ -40,6 +40,10 @@ export class ProductDetailComponent implements OnInit {
       else if(this.colorid==3){
         //console.log("3");
         this.dataValue = "assets/img/home3/scooty-2.png";
+      }
+      else if(this.colorid==4){
+        //console.log("4");
+        this.dataValue = "assets/img/home3/scooty-3.png";
       }else{
         
       }
