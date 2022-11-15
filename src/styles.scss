@@ -5957,3 +5957,48 @@ Animation CSS
     }
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+    .main-banner{
+        padding-top: 65px !important;
+    }
+    .banner-content h1{
+        font-size: 20px !important;
+    }
+    .banner-content p{
+        font-size: 16px;
+    }
+    .sRow ul li{
+        padding-top: 15px;
+    }
+    .bnRight {
+        left: 35px;
+        top: 95px;
+    }
+    .addbnRights{
+        display: none;
+    }
+    .sBoxPara{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .owl-carousel .owl-item{
+        // width: 200px !important;
+    }
+    .owl-stage-outer .owl-item.active.center{
+        width: 200px !important;
+    }
+    .owl-item.active.center{
+        box-shadow: none;
+        border: none;
+    }
+    .product-images-slider.owl-carousel.owl-theme.owl-loaded.owl-drag {
+        height: 208px;
+        overflow: hidden !important;
+    }
+    .sectionSecond{
+        text-align: center;
+    }
+    .mobileOnlyOwl .owl-stage-outer .owl-item.active.center{
+        width: auto !important;
+    }
+}
